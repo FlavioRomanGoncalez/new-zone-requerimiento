@@ -69,7 +69,7 @@ export const StyledLoginContainer = styled(Box)`
       background-color: ${background.primary};
       border-radius: 11px;
       font-family: "Inter", sans-serif;
-      border: 2px solid white;
+      border: 2px solid #61eb1b;
     }
 
     .logo_container {
