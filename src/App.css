@@ -1,0 +1,258 @@
+/* :::::ESTILOS GLOBALES::::: */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "AvenirNextLTPro";
+  src: url("./font/AvenirNextLTPro-Regular.otf");
+}
+
+:root {
+  --primary: #62ea1b;
+  --secondary: #000000;
+}
+
+body {
+  padding: 20px;
+  min-height: 100vh;
+  background-color: #222;
+  background-repeat: repeat;
+  background-size: 5%;
+  background-image: url("../public/MicrosoftTeams-image\ \(18\).png");
+  font-family: "AvenirNextLTPro", sans-serif;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+li {
+  list-style: none;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+}
+
+select,
+option {
+  border: none;
+  outline: none;
+}
+
+textarea {
+  outline: none;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+label {
+  color: #fff;
+}
+
+p {
+  color: #fff;
+  text-align: center;
+}
+
+button {
+  width: 100%;
+  height: 30px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 5px;
+  background-color: var(--primary);
+}
+
+button:hover {
+  background-color: #5fcb25;
+}
+
+/* :::::ESTILOS PARA LAS CLASES::::: */
+.container {
+  width: 100%;
+  margin: auto;
+  padding: 10px;
+  display: block;
+  max-width: 600px;
+  background-color: var(--secondary);
+  border: 2px solid var(--primary);
+  /* box-shadow: -5px 5px 1px var(--primary); */
+}
+
+/* :::::ESTILO LOGO::::: */
+.logo {
+  margin: auto;
+  display: block;
+  max-width: 220px;
+}
+
+/* :::::ESTILO TITULO::::: */
+.title {
+  color: #fff;
+  margin: 10px 0;
+  text-align: center;
+}
+
+/* :::::ESTILO FORMULARIO::::: */
+.container_form {
+  display: flex;
+  row-gap: 15px;
+  flex-direction: column;
+}
+
+.description {
+  margin: 10px 0;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* :::::ESTILO INPUT::::: */
+.input {
+  width: 100%;
+  height: 35px;
+  padding: 10px;
+  border-radius: 5px;
+  transition: 0.2s all linear;
+  border-left: 2px solid var(--primary);
+  border-bottom: 2px solid var(--primary);
+}
+
+.input:focus {
+  border-left: 0px solid var(--primary);
+  border-bottom: 0px solid var(--primary);
+}
+
+/* :::::ESTILO SELECT::::: */
+.select {
+  width: 100%;
+  height: 35px;
+  padding: 0 5px;
+  border-radius: 5px;
+  border-left: 2px solid var(--primary);
+  border-bottom: 2px solid var(--primary);
+}
+
+.select:focus {
+  border-left: 0px solid var(--primary);
+  border-bottom: 0px solid var(--primary);
+}
+
+.container_checkbox {
+  display: flex;
+  margin-right: auto;
+  flex-direction: column;
+}
+
+.form_check {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  width: 100%;
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+}
+
+.container_textarea {
+  width: 100%;
+}
+
+.textarea {
+  border-radius: 5px;
+  border-left: 3px solid var(--primary);
+}
+
+.file {
+  padding: 5px;
+  border-radius: 10px;
+  border: 2px solid #646464;
+}
+
+.container_file {
+  display: flex;
+  width: 100%;
+  row-gap: 10px;
+  flex-direction: column;
+  column-gap: 5px;
+}
+
+.drop-container {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  /* padding: 10px; */
+  border-radius: 10px;
+  border-left: 2px solid var(--primary);
+  border-bottom: 2px solid var(--primary);
+  color: #444;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out, border 0.2s ease-in-out;
+}
+
+.drop-container:hover {
+  border-color: #111;
+  border: 2px solid var(--primary);
+}
+
+.drop-container:hover .drop-title {
+  color: #222;
+}
+
+.drop-title {
+  color: #444;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  transition: color 0.2s ease-in-out;
+}
+
+input[type="file"] {
+  color: #fff;
+}
+
+input[type="file"]::file-selector-button {
+  margin-right: 20px;
+  color: #fff;
+  border: none;
+  background: #084cdf;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background: #0d45a5;
+}
+
+/* :::::RESPONSIVE::::: */
+@media screen and (max-width: 500px) {
+  .flex-row {
+    row-gap: 10px;
+    flex-direction: column;
+  }
+}
