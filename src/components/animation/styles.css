@@ -1,0 +1,98 @@
+img {
+  object-fit: cover;
+}
+
+.container_transition {
+  width: 100%;
+  overflow: hidden;
+  min-height: 100vh;
+  position: relative;
+  background-color: #000000;
+}
+
+.arrow {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #62ea1b;
+  clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+  animation: arrowMove 1.5s;
+}
+
+@keyframes arrowMove {
+  from {
+    transform: translateX(50%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* :::::ANIMACION ICONOS::::: */
+.container_icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  column-gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon01 {
+  animation: iconMove01 1s;
+}
+.icon02 {
+  animation: iconMove02 1.2s;
+}
+.icon03 {
+  animation: iconMove03 1.3s;
+}
+
+@keyframes iconMove01 {
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  from {
+    opacity: 0;
+    transform: translateX(200%);
+  }
+}
+@keyframes iconMove02 {
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  from {
+    opacity: 0;
+    transform: translateX(400%);
+  }
+}
+@keyframes iconMove03 {
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  from {
+    opacity: 0;
+    transform: translateX(600%);
+  }
+}
+
+/* :::::ANIMACION LOGO::::: */
+.container_logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -16,13 +16,12 @@
 }
 
 body {
-  padding: 20px;
   min-height: 100vh;
+  background-size: 5%;
   background-color: #222;
   background-repeat: repeat;
-  background-size: 5%;
-  background-image: url("../public/MicrosoftTeams-image\ \(18\).png");
   font-family: "AvenirNextLTPro", sans-serif;
+  background-image: url("../public/bgLogo01.png");
 }
 
 form {
@@ -88,17 +87,17 @@ button:hover {
 .container {
   width: 100%;
   margin: auto;
-  padding: 10px;
+  padding: 20px;
   display: block;
   max-width: 600px;
+  border-radius: 5px;
   background-color: var(--secondary);
-  border: 2px solid var(--primary);
-  /* box-shadow: -5px 5px 1px var(--primary); */
+  box-shadow: -5px 5px var(--primary);
 }
 
 /* :::::ESTILO LOGO::::: */
 .logo {
-  margin: auto;
+  margin: 30px auto;
   display: block;
   max-width: 220px;
 }
@@ -126,7 +125,7 @@ button:hover {
 /* :::::ESTILO INPUT::::: */
 .input {
   width: 100%;
-  height: 35px;
+  height: 40px;
   padding: 10px;
   border-radius: 5px;
   transition: 0.2s all linear;
@@ -134,15 +133,10 @@ button:hover {
   border-bottom: 2px solid var(--primary);
 }
 
-.input:focus {
-  border-left: 0px solid var(--primary);
-  border-bottom: 0px solid var(--primary);
-}
-
 /* :::::ESTILO SELECT::::: */
 .select {
   width: 100%;
-  height: 35px;
+  height: 40px;
   padding: 0 5px;
   border-radius: 5px;
   border-left: 2px solid var(--primary);
@@ -203,7 +197,6 @@ button:hover {
   justify-content: center;
   align-items: center;
   height: 200px;
-  /* padding: 10px; */
   border-radius: 10px;
   border-left: 2px solid var(--primary);
   border-bottom: 2px solid var(--primary);
