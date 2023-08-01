@@ -6,7 +6,7 @@ import LOGO01 from "../../assets/logo01.png";
 import { interes } from "../../utils/interes";
 import { academia } from "../../utils/academia";
 import Animation from "../animation";
-import VideoFrame from "../video";
+
 import Transition from "../animation/transition";
 
 const Form = () => {

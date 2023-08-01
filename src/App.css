@@ -21,7 +21,7 @@ body {
   background-color: #222;
   background-repeat: repeat;
   font-family: "AvenirNextLTPro", sans-serif;
-  background-image: url("../public/bgLogo01.png");
+  background-image: url("/bgLogo01.png");
 }
 
 form {

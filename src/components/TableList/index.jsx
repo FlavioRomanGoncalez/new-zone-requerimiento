@@ -17,8 +17,12 @@ const TableListComponent = () => {
       <StyledDataContainer>
         <DataGrid
           className="Data-Grid"
-          rows={[{ id: 1, col1: "Hello", col2: "World" }]}
+          rows={[{ id: 2, name: "Hello", enterprice: "World",state:true },{ id: 1, name: "Hello", enterprice: "World" }]}
           columns={columns}
+          columnVisibilityModel={{
+            id:false
+          }}
+          
         />
       </StyledDataContainer>
     </ThemeProvider>
