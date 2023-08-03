@@ -1,46 +1,9 @@
 import "./styles.css";
 import ICON from "../../../public/icon.png";
-import { useSpring, animated } from "@react-spring/web";
+import IMAGE from "../../../public/bgLogo01.png";
+import LOGO from "../../../public/logo01.png";
 
 const Transition = () => {
-  const springArrow = useSpring({
-    from: { x: "100%" },
-    to: { x: "-100%" },
-    config: {
-      duration: 1000,
-    },
-  });
-
-  const springIcon01 = useSpring({
-    from: { x: "0%" },
-    to: { x: "100%" },
-    config: {
-      duration: 1000,
-    },
-  });
-  const springIcon02 = useSpring({
-    from: { x: "0%" },
-    to: { x: "50%" },
-    config: {
-      duration: 2000,
-    },
-  });
-  const springIcon03 = useSpring({
-    from: { x: "0%" },
-    to: { x: "50%" },
-    config: {
-      duration: 3000,
-    },
-  });
-
-  //   const springLogo = useSpring({
-  //     from: { x: "0%" },
-  //     to: { x: "50%" },
-  //     config: {
-  //       duration: 2000,
-  //     },
-  //   });
-
   return (
     <div className="container_transition">
       {/* :::::ARROW ANIMATION::::: */}
@@ -67,33 +30,38 @@ const Transition = () => {
       </div>
       <div className="container_logo">
         <img
-          src={ICON}
-          className="logo"
-          style={{ width: "50px", height: "50px" }}
+          alt=""
+          src={LOGO}
+          className="primary_logo"
+          style={{ width: "200px" }}
         />
       </div>
-      {/* :::::ICONS::::: */}
-      {/* <div style={{ display: "flex", alignItems: "center", columnGap: "10px" }}>
-        <animated.div style={{ ...springIcon01 }}>
-          <img style={{ width: "50px", height: "50px" }} src={ICON} alt="" />
-        </animated.div>
-        <animated.div style={{ ...springIcon02 }}>
-          <img style={{ width: "50px", height: "50px" }} src={ICON} alt="" />
-        </animated.div>
-        <animated.div style={{ ...springIcon03 }}>
-          <img style={{ width: "50px", height: "50px" }} src={ICON} alt="" />
-        </animated.div>
-      </div> */}
-      {/* {[1, 2, 3].map((value, index) => {
-        return (
-          <animated.div key={index} style={{ ...springIcon }}>
-            <img style={{ width: "50px", height: "50px" }} src={ICON} alt="" />
-          </animated.div>
-        );
-      })} */}
-      {/* <animated.div style={{ ...springArrow }} className="arrow">
-        <img style={{ width: "50px", height: "50px" }} src={ICON} alt="" />
-      </animated.div> */}
+      <div className="container_logo">
+        <img
+          src={IMAGE}
+          className="logo_01"
+          style={{
+            top: 50,
+            right: 50,
+            width: "100px",
+            height: "100px",
+            position: "absolute",
+          }}
+        />
+      </div>
+      <div className="container_logo">
+        <img
+          src={IMAGE}
+          className="logo_02"
+          style={{
+            lef: 0,
+            bottom: 50,
+            width: "100px",
+            height: "100px",
+            position: "absolute",
+          }}
+        />
+      </div>
     </div>
   );
 };

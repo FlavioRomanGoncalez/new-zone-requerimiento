@@ -1,4 +1,4 @@
-// :::::ANIMEJS:::::
+// :::::SPRING:::::
 import { useSpring, animated } from "@react-spring/web";
 // :::::IMAGEN:::::
 import LOGO01 from "../../assets/logo01.png";
